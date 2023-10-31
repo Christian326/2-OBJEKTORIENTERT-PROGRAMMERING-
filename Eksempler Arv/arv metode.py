@@ -19,7 +19,9 @@ class Kvadrat(Rektangel):
         super().__init__(sidekant, sidekant)
 
     def info(self):
-        print(f" Sidelengde:{self.lengde:.2f}, Areal: {self.areal():.2f}, Type: {type(self)}")
+        super().info()
+        print("men bredde og lengde er lik, så vi kunne egt bare skrevet sidelengde....")
+        #print(f" Sidelengde:{self.lengde:.2f}, Areal: {self.areal():.2f}, Type: {type(self)}")
 
 kvadrat1 = Kvadrat(2)
 rektangel1 = Rektangel(2, 3)
